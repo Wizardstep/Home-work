@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+<div class="list">
+
+<div class="top">
+<img src="icons/av_64.png" alt="alt">
+<ul class="nav">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Homework</a></li>
+	<li><a href="#" class="check">Settings</a></li>
+</ul>
+</div>
+
+<h2>Settings</h2>
+
+<div class="center">
+<span>AVATAR</span>
+<span class="centTxt">STUDENT'S INFO</span>
+<span>CHANGE PASSWORD</span>
+</div>
+
+
+<div class="form">
+<div class="foto">
+	<img src="icons/av_256.png">
+	<form action="#" method="post" name="foto" enctype="multipart/from-data">
+<input type="file" name="file" accept="image/jpeg,image/png" id="file">
+<label for="file" class="label">Choose photo</label>		
+	</form>
+</div>
+
+<div class="info">
+<form method="post" name="info" action="#" enctype="text/plain">
+<p>
+	<input type="text" name="FirstName" placeholder="First name" maxlength="10" required>
+</p>
+<p>
+	<input type="text" name="LastName" placeholder="Last Name" maxlength="10" required>
+</p>
+<p>
+	<input type="email" name="email" placeholder="Email" required maxlength="25">
+</p>
+<p>
+	<input type="phone" name="phone" placeholder="Phone number" maxlength="13" required>
+</p>
+<p>
+	<input type="text" name="Address" placeholder="Address" maxlength="50">
+</p>
+<p>
+	<input type="text" name="FB" placeholder="FB link" maxlength="25">
+</p>
+<p>
+	<input type="submit" value="Save changes">
+</p>
+</form> 	
+
+</div>
+
+<div class="pass">	
+
+<form method="post" name="info" action="#" enctype="text/plain">
+
+<p>
+</p>
+<p>
+	<input type="password" name="newPass" id="confirm_password" onchange='check_pass();' placeholder="New password" maxlength="10" required>
+</p>
+<p>
+	<input type="password" name="oldPass" placeholder="Old password" maxlength="10" required>
+
+	<input type="password" name="repPass" placeholder="Repeat password" maxlength="10" required>
+</p>
+<p>
+	<input type="submit" id="myform" value="Change password">
+</p>
+</form>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>
